@@ -10,6 +10,7 @@ import whatsAppLogo from "../asset/svg/WhatsappLogo.svg"
 import codeIcon from "../asset/svg/CodeIcon.svg"
 import DesignIcon from "../asset/svg/DesignIcon.svg"
 import Skills from "./Skills";
+import Portfolio from "./Portfolio";
 
 
 const LandingPage = () => {
@@ -39,7 +40,7 @@ const LandingPage = () => {
                     <img className=" w-20" src={codeIcon} alt="" />
                     <div className=" flex flex-col my-5 items-center">
                         <span className=" text-white/75 text-xl ">3 years</span>
-                        <h2 className=" text-white text-3xl">Programer</h2>
+                        <h2 className=" text-white text-3xl">Programmer</h2>
                     </div>
                 </div>
 
@@ -62,10 +63,7 @@ const LandingPage = () => {
 
             <Skills />
 
-
-            <section>
-                <HeaderText text="🔗 Portfólio" />
-            </section>
+            <Portfolio />
         </div>
     );
 }
