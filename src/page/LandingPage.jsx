@@ -9,6 +9,7 @@ import HeaderText from "../components/HeaderText";
 import whatsAppLogo from "../asset/svg/WhatsappLogo.svg"
 import codeIcon from "../asset/svg/CodeIcon.svg"
 import DesignIcon from "../asset/svg/DesignIcon.svg"
+import Skills from "./Skills";
 
 
 const LandingPage = () => {
@@ -34,21 +35,36 @@ const LandingPage = () => {
             </header>
 
             <section className=" pt-10">
-                <div className=" flex flex-col justify-center  items-center border rounded-lg border-[#7B4AE2] p-10 mt-10">
-                    <img src={codeIcon} alt="" />
+                <div className=" flex flex-col justify-center  items-center border rounded-lg border-[#7B4AE2] p-5 mt-10">
+                    <img className=" w-20" src={codeIcon} alt="" />
                     <div className=" flex flex-col my-5 items-center">
                         <span className=" text-white/75 text-xl ">3 years</span>
                         <h2 className=" text-white text-3xl">Programer</h2>
                     </div>
                 </div>
 
-                <div className=" flex flex-col justify-center  items-center border rounded-lg border-[#7B4AE2] p-10 mt-10">
-                    <img src={DesignIcon} alt="" />
+                <div className=" flex flex-col justify-center  items-center border rounded-lg border-[#7B4AE2] py-5 mt-10">
+                    <img className=" w-20" src={DesignIcon} alt="" />
                     <div className=" flex flex-col my-5 items-center">
                         <span className=" text-white/75 text-xl ">4 years</span>
                         <h2 className=" text-white text-3xl">Designer</h2>
                     </div>
                 </div>
+            </section>
+
+            <section className=" pt-20">
+                <HeaderText text="🧐 About Me" />
+                <p className=" text-white/50 my-10 ">Mas pode me chamar apenas de Henrique. Prazer! Há mais de 2 anos desenvolvendo e programando interfaces com JavaScript, React JS e Typescript. Graduado em Análise e Desenvolvimento de Sistemas pela Fatec de São José dos Campos. Interesses em desenvolvimento Front-end com React, React Native e UX/UI Design.
+
+                    🚀 Tentando ser um pouquinho melhor do que ontem todos os dias. </p>
+
+            </section>
+
+            <Skills />
+
+
+            <section>
+                <HeaderText text="🔗 Portfólio" />
             </section>
         </div>
     );
