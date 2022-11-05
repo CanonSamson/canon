@@ -9,8 +9,14 @@ import HeaderText from "../components/HeaderText";
 import whatsAppLogo from "../asset/svg/WhatsappLogo.svg"
 import codeIcon from "../asset/svg/CodeIcon.svg"
 import DesignIcon from "../asset/svg/DesignIcon.svg"
+import mess from "../asset/svg/mess.svg"
+import Copysimple from "../asset/svg/CopySimple.svg"
+import ArrowUp from "../asset/svg/ArrowUp.svg"
+
+//components
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
+import Experience from "./Experience";
 
 
 const LandingPage = () => {
@@ -64,6 +70,34 @@ const LandingPage = () => {
             <Skills />
 
             <Portfolio />
+
+            <Experience />
+
+            <section className=" py-10">
+                <HeaderText text="📬 Contatos " />
+                <h3>
+                    Entre
+                    em contato
+                </h3>
+                <button className="  flex  items-center border rounded-lg border-[#7B4AE2] px-10 py-4 mt-10 ">
+                    <img src={whatsAppLogo} alt="" />
+                    <span className="text-Lblue/50 text-xl ml-5">Contact Me</span>
+                </button>
+                <div className=" my-10">
+                    <img className="mb-5" src={mess} alt="" />
+                    <p className=" text-xl font-semibold text-Lblue">E-mail:</p>
+                    <div className=" flex items-center my-5">
+                        <span className=" text-white/50">henriquesousa.dev@gmail.com</span>
+                        <img className=" ml-5" src={Copysimple} alt="" />
+                    </div>
+                    <div className=" flex items-center my-5">
+                        <span className=" text-Lblue/50">Voltar ao topo</span>
+                        <img className=" ml-5" src={ArrowUp} alt="" />
+                    </div>
+                </div>
+
+
+            </section>
         </div>
     );
 }
