@@ -51,10 +51,9 @@ const Portfolio = () => {
 
 
             <section className=" my-10">
-                <div>
-                    <h2 className=" text-white text-2xl font-bold mb-5">Projetos <br />
-                        em vídeo</h2>
-                    <p className=" text-white/50">Sempre é bom saber um pouquinho de edição</p>
+                <div className=" flex flex-col justify-center">
+                    <h2 className=" text-white text-center text-2xl font-bold mb-5">Other Noteworthy Projects</h2>
+                    <p className=" text-Lblue text-center">View Complete List of Projects/Codes</p>
                 </div>
                 
                 <div className=" my-10">

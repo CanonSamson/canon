@@ -23,7 +23,7 @@ const LandingPage = () => {
     return (
         <div >
             <Nav />
-            <main className=" mx-5">
+            <main className=" mx-5 pt-[60px]">
                 <header>
                     <div className=" flex justify-center my-10  items-center">
                         <img src={github} alt="" />
@@ -42,7 +42,7 @@ const LandingPage = () => {
                     </div>
                 </header>
 
-                <section className=" pt-10">
+                {/* <section className=" pt-10">
                     <div className=" flex flex-col justify-center  items-center border rounded-lg border-[#7B4AE2] p-5 mt-10">
                         <img className=" w-20" src={codeIcon} alt="" />
                         <div className=" flex flex-col my-5 items-center">
@@ -58,7 +58,7 @@ const LandingPage = () => {
                             <h2 className=" text-white text-3xl">Designer</h2>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className=" pt-20">
                     <HeaderText text="🧐 About Me" />
