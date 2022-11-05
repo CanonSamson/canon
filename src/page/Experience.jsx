@@ -5,8 +5,6 @@ const Experience = () => {
     return (
         <div className=" text-white py-10">
             <HeaderText text="💼 Carreira " />
-            <h2 className="text-xl font-semibold my-5 pt-10">Trajetória<br />
-                até aqui</h2>
 
             <section className=" py-5">
                 <h2 className=" my-5">
