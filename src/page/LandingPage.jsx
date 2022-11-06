@@ -6,7 +6,7 @@ import behance from "../asset/svg/behance.svg"
 import avater from "../asset/svg/AvatarAndIcons.svg"
 import HeaderText from "../components/HeaderText";
 import whatsAppLogo from "../asset/svg/WhatsappLogo.svg"
-// import codeIcon from "../asset/svg/CodeIcon.svg"
+import ArrowLineDown from "../asset/svg/ArrowLineDown.svg"
 import me from "../asset/image/me.gif"
 import mess from "../asset/svg/mess.svg"
 import Copysimple from "../asset/svg/CopySimple.svg"
@@ -21,7 +21,7 @@ import Experience from "./Experience";
 const LandingPage = () => {
     return (
         <div >
-            <main className=" mx-5 pt-[60px]">
+            <main className=" mx-5 pt-[60px] ">
                 <header>
                     <div className=" flex justify-center my-10 Btablet:hidden items-center">
                         <img src={github} alt="" />
@@ -29,7 +29,7 @@ const LandingPage = () => {
                         <img src={behance} alt="" />
                     </div>
 
-                    <div className=" Btablet:flex justify-between Btablet: items-center">
+                    <div className="min-h-screen  Btablet:flex justify-between Btablet: items-center">
                         <div className="flex  flex-col-reverse Btablet:flex-1 items-center justify-between Btablet:flex-row">
                             <div className=" Btablet:w-[300px] w-full">
                                 <HeaderText text="👋 Hello I'm!" />
@@ -43,32 +43,20 @@ const LandingPage = () => {
                             </div>
                             <img className=" flex justify-center m-auto" src={avater} alt="" />
                         </div>
-                        <button className="  flex  items-center border rounded w-[200px] border-[#7B4AE2] justify-center py-4 mt-10 ">
-                            <img src={whatsAppLogo} alt="" />
-                            <span className="text-Lblue/50 text-xl ml-2">Contact Me</span>
-                        </button>
+                        <div className=" mt-10 Btablet:mt-0">
+                            <div className=" flex items-center mb-5">
+                                <p className=" text-Lblue/50">Baixar CV</p>
+                                <img src={ArrowLineDown} alt="" />
+                            </div>
+                            <button className="  flex  items-center border rounded w-[200px] border-[#7B4AE2] justify-center py-4  ">
+                                <img src={whatsAppLogo} alt="" />
+                                <span className="text-Lblue/50 text-xl ml-2">Contact Me</span>
+                            </button>
+                        </div>
                     </div>
                 </header>
 
-                {/* <section className=" pt-10">
-                    <div className=" flex flex-col justify-center  items-center border rounded-lg border-[#7B4AE2] p-5 mt-10">
-                        <img className=" w-20" src={codeIcon} alt="" />
-                        <div className=" flex flex-col my-5 items-center">
-                            <span className=" text-white/75 text-xl ">3 years</span>
-                            <h2 className=" text-white text-3xl">Programmer</h2>
-                        </div>
-                    </div>
-
-                    <div className=" flex flex-col justify-center  items-center border rounded-lg border-[#7B4AE2] py-5 mt-10">
-                        <img className=" w-20" src={DesignIcon} alt="" />
-                        <div className=" flex flex-col my-5 items-center">
-                            <span className=" text-white/75 text-xl ">4 years</span>
-                            <h2 className=" text-white text-3xl">Designer</h2>
-                        </div>
-                    </div>
-                </section> */}
-
-                <section className=" pt-20 Btablet:flex items-center">
+                <section className=" pt-20 Btablet:flex items-center max-w-[940px]  m-auto">
                     <div>
                         <HeaderText text="🧐 About Me" />
                         <p className=" text-white/50 my-10 ">Hello! My name is Canon. I work as a FrontEnd developer. I've worked on various projects over the previous three years, and I like developing as well. My first language is English, and my biggest ambition is to see things grow on the internet.</p>
@@ -76,34 +64,26 @@ const LandingPage = () => {
                         <p className=" text-white/50 my-10 ">Here is a list of the technologies that I'm familiar with!</p>
                         <Skills />
                     </div>
-
                 </section>
-
                 <Portfolio />
-
                 <Experience />
-
-                <section className=" py-10">
-                    <HeaderText text="📬 Contatos " />
-                    {/* <button className="  flex  items-center border rounded-lg border-[#7B4AE2] px-10 py-4 mt-10 ">
-                        <img src={whatsAppLogo} alt="" />
-                        <span className="text-Lblue/50 text-xl ml-5">Contact Me</span>
-                    </button> */}
-                    <div className=" my-10">
+                <section className=" py-10 Btablet:flex justify-center flex-col ">
+                    <HeaderText text="📬 Contact Me " />
+                    <h4 className=" text-xl Btablet:text-3xl  Btablet:pt-10 font-semibold text-white Btablet:text-center">Vamos conversar! </h4>
+                    <div className=" my-10 Btablet:flex justify-center flex-col items-center">
                         <img className="mb-5" src={mess} alt="" />
                         <p className=" text-xl font-semibold text-Lblue">E-mail:</p>
                         <div className=" flex items-center my-5">
                             <span className=" text-white/50">henriquesousa.dev@gmail.com</span>
                             <img className=" ml-5" src={Copysimple} alt="" />
                         </div>
-                        <div className=" flex items-center my-5">
-                            <span className=" text-Lblue/50">Voltar ao topo</span>
-                            <img className=" ml-5" src={ArrowUp} alt="" />
-                        </div>
+
                     </div>
-
-
                 </section>
+                <div className=" flex items-center my-5 Btablet:justify-center Btablet:pb-10">
+                    <span className=" text-Lblue/50">Voltar ao topo</span>
+                    <img className=" ml-5" src={ArrowUp} alt="" />
+                </div>
             </main>
 
             <footer className="  bg-[#14142A] p-5 flex flex-col justify-center ">

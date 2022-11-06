@@ -57,22 +57,20 @@ const Portfolio = () => {
             <HeaderText text="🔗 Portfólio" />
             <div className=" Btablet:flex justify-between items-center mt-10 ">
                 <h2 className=" text-xl font-semibold text-white">Trabalhos e projetos</h2>
-                <div className=" w-full Btablet:w-auto overflow-x-auto ">
-                    <div className=" grid grid-cols-3 gap-5 w-[500px]">
-                        <div className=" flex items-center border border-Lblue py-2 rounded-lg">
-                            <img className=" w-10" src={DesignIcon} alt="" />
-                            <span className=" text-Lblue pl-2">UI Design</span>
-                        </div>
+                <div className="mt-5 Btablet:mt-0 flex items-center w-full Btablet:w-auto  gap-5 overflow-x-auto">
+                    <div className=" min-w-[200px] justify-center  flex items-center border border-Lblue py-2 rounded-lg">
+                        <img className=" w-10" src={DesignIcon} alt="" />
+                        <span className=" text-Lblue pl-2">FrontEnd</span>
+                    </div>
 
-                        <div className=" flex items-center border border-Lblue py-2 rounded-lg">
-                            <img className=" w-10" src={DesignIcon} alt="" />
-                            <span className=" text-Lblue pl-2">UI Design</span>
-                        </div>
+                    <div className="min-w-[200px] justify-center flex items-center border border-Lblue py-2 rounded-lg">
+                        <img className=" w-10" src={DesignIcon} alt="" />
+                        <span className=" text-Lblue pl-2">UI Design</span>
+                    </div>
 
-                        <div className=" flex items-center border border-Lblue py-2 rounded-lg">
-                            <img className=" w-10" src={DesignIcon} alt="" />
-                            <span className=" text-Lblue pl-2">UI Design</span>
-                        </div>
+                    <div className=" min-w-[200px] justify-center  flex items-center border border-Lblue py-2 rounded-lg">
+                        <img className=" w-10" src={DesignIcon} alt="" />
+                        <span className=" text-Lblue pl-2">Ux Design</span>
                     </div>
                 </div>
             </div>
@@ -116,7 +114,9 @@ const Portfolio = () => {
             <section className=" my-10">
                 <div className=" flex flex-col justify-center">
                     <h2 className=" text-white text-center text-2xl font-bold mb-5">Other Noteworthy Projects</h2>
-                    <p className=" text-Lblue text-center">View Complete List of Projects/Codes</p>
+                    <Link to="/archive" >
+                        <p className=" text-Lblue text-center">View Complete List of Projects/Codes</p>
+                    </Link>
                 </div>
 
                 <div className=" my-10">
