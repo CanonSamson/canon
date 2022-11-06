@@ -10,9 +10,9 @@ module.exports = {
         Lblue: '#7B4AE2',
       },
       screens: {
-        'tablet': '640px',
+        'tablet': '800px',
         // => @media (min-width: 500px) { ... }
-        'Btablet': '683px',
+        'Btablet': '1000px',
         // => @media (min-width: 600px) { ... }
         'Stablet': '700px',
         // => @media (min-width: 600px) { ... }

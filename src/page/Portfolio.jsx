@@ -31,33 +31,56 @@ const Portfolio = () => {
             lang3: ""
 
         },
+        {
+            id: 2,
+            name: "Move.it",
+            image: portImg,
+            description: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+            lang1: "ReactJs",
+            lang2: "Tailwind Css",
+            lang3: ""
+
+        },
+        {
+            id: 2,
+            name: "Move.it",
+            image: portImg,
+            description: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+            lang1: "ReactJs",
+            lang2: "Tailwind Css",
+            lang3: ""
+
+        },
     ]
     return (
         <section className=" my-10">
             <HeaderText text="🔗 Portfólio" />
-            <div className=" w-full overflow-x-auto mt-10">
-                <div className=" grid grid-cols-3 gap-5 w-[500px]">
-                    <div className=" flex items-center border border-Lblue py-2 rounded-lg">
-                        <img className=" w-10" src={DesignIcon} alt="" />
-                        <span className=" text-Lblue pl-2">UI Design</span>
-                    </div>
+            <div className=" Btablet:flex justify-between items-center mt-10 ">
+                <h2 className=" text-xl font-semibold text-white">Trabalhos e projetos</h2>
+                <div className=" w-full Btablet:w-auto overflow-x-auto ">
+                    <div className=" grid grid-cols-3 gap-5 w-[500px]">
+                        <div className=" flex items-center border border-Lblue py-2 rounded-lg">
+                            <img className=" w-10" src={DesignIcon} alt="" />
+                            <span className=" text-Lblue pl-2">UI Design</span>
+                        </div>
 
-                    <div className=" flex items-center border border-Lblue py-2 rounded-lg">
-                        <img className=" w-10" src={DesignIcon} alt="" />
-                        <span className=" text-Lblue pl-2">UI Design</span>
-                    </div>
+                        <div className=" flex items-center border border-Lblue py-2 rounded-lg">
+                            <img className=" w-10" src={DesignIcon} alt="" />
+                            <span className=" text-Lblue pl-2">UI Design</span>
+                        </div>
 
-                    <div className=" flex items-center border border-Lblue py-2 rounded-lg">
-                        <img className=" w-10" src={DesignIcon} alt="" />
-                        <span className=" text-Lblue pl-2">UI Design</span>
+                        <div className=" flex items-center border border-Lblue py-2 rounded-lg">
+                            <img className=" w-10" src={DesignIcon} alt="" />
+                            <span className=" text-Lblue pl-2">UI Design</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className=" my-10 flex w-full overflow-x-auto">
+            <div className=" my-10 flex w-full overflow-x-auto Btablet:grid grid-cols-3">
                 {
                     projects.map((project) => (
-                        <div key={project.id} className=" mx-5 min-w-[350px] p-5 border border-Lblue rounded-xl">
+                        <div key={project.id} className=" mx-5 mb-5 min-w-[350px] p-5 border border-Lblue rounded-xl">
                             <span className=" text-white text-2xl">{project.name}</span>
                             <p className=" text-white/50 py-2">{project.description}</p>
                             <div className=" flex items-center my-5 ">
