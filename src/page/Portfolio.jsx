@@ -4,9 +4,34 @@ import portImg from "../asset/image/portImg.png"
 import video from "../asset/image/video.png"
 import ArrowRight from "../asset/svg/ArrowRight.svg"
 import icon from "../asset/svg/Vector.svg"
+import github from "../asset/svg/github.svg"
+import { Link } from "react-router-dom";
 
 
 const Portfolio = () => {
+
+    const projects = [
+        {
+            id: 1,
+            name: "Move.it",
+            image: portImg,
+            description: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+            lang1: "ReactJs",
+            lang2: "Tailwind Css",
+            lang3: ""
+
+        },
+        {
+            id: 2,
+            name: "Move.it",
+            image: portImg,
+            description: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+            lang1: "ReactJs",
+            lang2: "Tailwind Css",
+            lang3: ""
+
+        },
+    ]
     return (
         <section className=" my-10">
             <HeaderText text="🔗 Portfólio" />
@@ -29,20 +54,35 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            <div className=" my-10">
-                <div className=" w-[350px] p-5 border border-Lblue rounded-xl">
-                    <span className=" text-white text-2xl"> Move.it</span>
-                    <p className=" text-white/50 py-2">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
-                    <div className=" flex items-center my-5 ">
-                        <div className="mr-2">
-                            <span className=" text-Lblue bg-[#14142A] py-2 text-[10px]  px-2 rounded-lg text-center">ReactJs</span>
+            <div className=" my-10 flex w-full overflow-x-auto">
+                {
+                    projects.map((project) => (
+                        <div key={project.id} className=" mx-5 min-w-[350px] p-5 border border-Lblue rounded-xl">
+                            <span className=" text-white text-2xl">{project.name}</span>
+                            <p className=" text-white/50 py-2">{project.description}</p>
+                            <div className=" flex items-center my-5 ">
+                                <div className="mr-2">
+                                    <span className=" text-Lblue bg-[#14142A] py-2 text-[10px]  px-2 rounded-lg text-center">{project.lang1}</span>
+                                </div>
+                                <div className="mr-2">
+                                    <span className=" text-Lblue bg-[#14142A] py-2 text-[10px]  px-2 rounded-lg text-center">{project.lang2}</span>
+                                </div>
+                                <div className="mr-2">
+                                    <span className=" text-Lblue bg-[#14142A] py-2 text-[10px]  px-2 rounded-lg text-center">{project.lang3}</span>
+                                </div>
+                            </div>
+                            <div className=" flex items-center float-right my-2">
+                                <Link className=" shadow-xl mr-2 p-2" to="">
+                                    <img className=" w-5" src={github} alt="" />
+                                </Link>
+                                <Link className=" shadow-xl p-2" to="">
+                                    <img className=" w-5" src={github} alt="" />
+                                </Link>
+                            </div>
+                            <img className=" w-full" src={portImg} alt="" />
                         </div>
-                        <div className="mr-2">
-                            <span className=" text-Lblue bg-[#14142A] py-2 text-[10px]  px-2 rounded-lg text-center">Tailwind Css</span>
-                        </div>
-                    </div>
-                    <img className=" w-full" src={portImg} alt="" />
-                </div>
+                    ))
+                }
             </div>
             <div className=" flex justify-end items-center">
                 <span className=" text-Lblue/50">Ver mais projetos na Behance</span>
@@ -55,7 +95,7 @@ const Portfolio = () => {
                     <h2 className=" text-white text-center text-2xl font-bold mb-5">Other Noteworthy Projects</h2>
                     <p className=" text-Lblue text-center">View Complete List of Projects/Codes</p>
                 </div>
-                
+
                 <div className=" my-10">
                     <div className=" w-[350px] p-5 border border-Lblue rounded-xl">
                         <img className=" w-full" src={video} alt="" />

@@ -1,4 +1,3 @@
-import Nav from "../components/Nav";
 
 //svg 
 import github from "../asset/svg/github.svg"
@@ -7,8 +6,8 @@ import behance from "../asset/svg/behance.svg"
 import avater from "../asset/svg/AvatarAndIcons.svg"
 import HeaderText from "../components/HeaderText";
 import whatsAppLogo from "../asset/svg/WhatsappLogo.svg"
-import codeIcon from "../asset/svg/CodeIcon.svg"
-import DesignIcon from "../asset/svg/DesignIcon.svg"
+// import codeIcon from "../asset/svg/CodeIcon.svg"
+// import DesignIcon from "../asset/svg/DesignIcon.svg"
 import mess from "../asset/svg/mess.svg"
 import Copysimple from "../asset/svg/CopySimple.svg"
 import ArrowUp from "../asset/svg/ArrowUp.svg"
@@ -22,7 +21,6 @@ import Experience from "./Experience";
 const LandingPage = () => {
     return (
         <div >
-            <Nav />
             <main className=" mx-5 pt-[60px]">
                 <header>
                     <div className=" flex justify-center my-10  items-center">
@@ -65,7 +63,6 @@ const LandingPage = () => {
                     <p className=" text-white/50 my-10 ">Hello! My name is Canon. I work as a FrontEnd developer. I've worked on various projects over the previous three years, and I like developing as well. My first language is English, and my biggest ambition is to see things grow on the internet.</p>
                     <p className=" text-white/50 my-10 ">When starting a new project, I prefer to talk with my customers to have a better grasp of their needs and project vision. Thank you in advance for your time and consideration. I hope to work with you soon.</p>
                     <p className=" text-white/50 my-10 ">Here is a list of the technologies that I'm familiar with!</p>
-
                 </section>
 
                 <Skills />
@@ -76,14 +73,10 @@ const LandingPage = () => {
 
                 <section className=" py-10">
                     <HeaderText text="📬 Contatos " />
-                    <h3>
-                        Entre
-                        em contato
-                    </h3>
-                    <button className="  flex  items-center border rounded-lg border-[#7B4AE2] px-10 py-4 mt-10 ">
+                    {/* <button className="  flex  items-center border rounded-lg border-[#7B4AE2] px-10 py-4 mt-10 ">
                         <img src={whatsAppLogo} alt="" />
                         <span className="text-Lblue/50 text-xl ml-5">Contact Me</span>
-                    </button>
+                    </button> */}
                     <div className=" my-10">
                         <img className="mb-5" src={mess} alt="" />
                         <p className=" text-xl font-semibold text-Lblue">E-mail:</p>

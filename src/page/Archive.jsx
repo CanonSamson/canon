@@ -1,13 +1,11 @@
 import github from "../asset/svg/github.svg"
 import HeaderText from "../components/HeaderText";
 import { Link } from "react-router-dom";
-import Nav from "../components/Nav";
 
 
 const Archive = () => {
     return (
         <div>
-            <Nav />
             <div className=" text-white px-5 ">
                 <div className=" pt-20 ">
 
