@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Logo from "../../asset/svg/Logo.svg"
 import { HiBars3BottomRight, HiXMark } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const HomeRoute = () => {
     const [toggle, setToggle] = useState(false)
@@ -18,39 +19,35 @@ const HomeRoute = () => {
                             <img src={Logo} alt="" />
                         </Link>
                         <div className=" tablet:hidden">
-                            <Link className={`${toggle ? "hidden" : "flex"}`} onClick={Toggler} to="" >
-                                <HiBars3BottomRight size={50} />
-                            </Link>
-                            <Link className={`${toggle ? "flex" : "hidden"}`} onClick={Toggler} to="" >
-                                <HiXMark size={50} />
-                            </Link>
+                            <div className={`${toggle ? "hidden" : "flex"}`} onClick={Toggler} to="" ><HiBars3BottomRight size={50} /> </div>
+                            <div className={`${toggle ? "flex" : "hidden"}`} onClick={Toggler} to="" ><HiXMark size={50} /></div>
                         </div>
                     </nav>
                     <div className={`${toggle ? "right-0" : "right-[-100%] tablet:right-0"}  Btablet:relative Btablet:float-none Btablet:flex-row Btablet:top-0 Btablet:text-center duration-150 transition-all z-50 fixed  right-0 flex flex-col justify-end float-right items-end top-20`}>
-                        <Link to="" onClick={Toggler} className="my-5">
+                        <HashLink smooth to="" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue  bg-[#14142A]  py-2 px-10 rounded-l-lg text-center">Home</span>
-                        </Link>
-                        <Link to="" onClick={Toggler} className="my-5">
+                        </HashLink>
+                        <HashLink smooth to="#about" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]  Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">About Me </span>
-                        </Link>
-                        <Link to="" onClick={Toggler} className="my-5">
+                        </HashLink>
+                        <HashLink smooth to="#portfolio" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]   Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">Portfolio</span>
-                        </Link>
-                        <Link to="" onClick={Toggler} className="my-5">
+                        </HashLink>
+                        <HashLink smooth to="#experience" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]  Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">Experience</span>
-                        </Link>
-                        <Link to="" onClick={Toggler} className="my-5">
+                        </HashLink>
+                        <HashLink smooth to="#contact" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]  Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">Contact Me</span>
-                        </Link>
-                        <Link to="" onClick={Toggler} className="my-5">
+                        </HashLink>
+                        <Link to="/archive" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]  Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">Archive</span>
                         </Link>
                     </div>
                 </nav>
-                <div onClick={Toggler} className={`${toggle ? "w-full h-screen" : "w-0 h-0"} duration-150 fixed bg-Bblue/20 w-full h-screen z-40`}></div>
+                <div onClick={Toggler} className={`${toggle ? "w-full h-screen Btablet:w-0 Btablet:h-0" : "w-0 h-0"} duration-150 fixed bg-Bblue/20 w-full h-screen z-40`}></div>
             </div>
 
-            <div className={`${toggle ? "right-[100%] absolute overflow-hidden " : "right-0 relative"} duration-200 transition-all`}  >
+            <div className={`${toggle ? "right-[100%] Btablet:right-0 absolute overflow-hidden " : "right-0 relative"} duration-200 transition-all`}  >
                 <Outlet />
             </div>
         </div>

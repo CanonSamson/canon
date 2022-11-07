@@ -6,6 +6,7 @@ import ArrowRight from "../asset/svg/ArrowRight.svg"
 import icon from "../asset/svg/Vector.svg"
 import github from "../asset/svg/github.svg"
 import { Link } from "react-router-dom";
+import { FiExternalLink } from "react-icons/fi";
 
 
 const Portfolio = () => {
@@ -53,7 +54,7 @@ const Portfolio = () => {
         },
     ]
     return (
-        <section className=" my-10">
+        <section id="portfolio" className=" my-10  Btablet:w-[80%] m-auto pt-[100px] ">
             <HeaderText text="🔗 Portfólio" />
             <div className=" Btablet:flex justify-between items-center mt-10 ">
                 <h2 className=" text-xl font-semibold text-white">Trabalhos e projetos</h2>
@@ -75,10 +76,10 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            <div className=" my-10 flex w-full overflow-x-auto Btablet:grid grid-cols-3">
+            <div className=" my-10 flex w-full overflow-x-auto Btablet:grid grid-cols-3 ">
                 {
                     projects.map((project) => (
-                        <div key={project.id} className=" mx-5 mb-5 min-w-[350px] p-5 border border-Lblue rounded-xl">
+                        <div key={project.id} className=" mx-5 mb-5 min-w-[350px]  Btablet:min-w-0 p-5 border border-Lblue rounded-xl">
                             <span className=" text-white text-2xl">{project.name}</span>
                             <p className=" text-white/50 py-2">{project.description}</p>
                             <div className=" flex items-center my-5 ">
@@ -93,8 +94,8 @@ const Portfolio = () => {
                                 </div>
                             </div>
                             <div className=" flex items-center float-right my-2">
-                                <Link className=" shadow-xl mr-2 p-2" to="">
-                                    <img className=" w-5" src={github} alt="" />
+                                <Link className=" shadow-xl mr-2 p-2 text-white/50" to="">
+                                    <FiExternalLink size={20} />
                                 </Link>
                                 <Link className=" shadow-xl p-2" to="">
                                     <img className=" w-5" src={github} alt="" />

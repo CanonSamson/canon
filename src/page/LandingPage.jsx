@@ -7,7 +7,9 @@ import avater from "../asset/svg/AvatarAndIcons.svg"
 import HeaderText from "../components/HeaderText";
 import whatsAppLogo from "../asset/svg/WhatsappLogo.svg"
 import ArrowLineDown from "../asset/svg/ArrowLineDown.svg"
-import me from "../asset/image/me.gif"
+import CodeIcon from "../asset/svg/CodeIcon.svg"
+import ProjectsIcon from "../asset/svg/ProjectsIcon.svg"
+import DesignIcon from "../asset/svg/DesignIcon.svg"
 import mess from "../asset/svg/mess.svg"
 import Copysimple from "../asset/svg/CopySimple.svg"
 import ArrowUp from "../asset/svg/ArrowUp.svg"
@@ -16,11 +18,13 @@ import ArrowUp from "../asset/svg/ArrowUp.svg"
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
 import Experience from "./Experience";
+import { HashLink } from "react-router-hash-link";
 
 
 const LandingPage = () => {
     return (
-        <div >
+        <div  className=" relative">
+            <div id="home" className=" absolute "></div>
             <main className=" mx-5 pt-[60px] ">
                 <header>
                     <div className=" flex justify-center my-10 Btablet:hidden items-center">
@@ -45,7 +49,7 @@ const LandingPage = () => {
                         </div>
                         <div className=" mt-10 Btablet:mt-0">
                             <div className=" flex items-center mb-5">
-                                <p className=" text-Lblue/50">Baixar CV</p>
+                                <p className=" text-Lblue/50">View CV</p>
                                 <img src={ArrowLineDown} alt="" />
                             </div>
                             <button className="  flex  items-center border rounded w-[200px] border-[#7B4AE2] justify-center py-4  ">
@@ -56,7 +60,40 @@ const LandingPage = () => {
                     </div>
                 </header>
 
-                <section className=" pt-20 Btablet:flex items-center max-w-[940px]  m-auto">
+
+                <section className="hidden Btablet:grid grid-cols-3 gap-5 w-[80%] m-auto ">
+                    <div className="  border border-Lblue/50 flex flex-col items-center rounded-xl justify-center py-10 ">
+                        <img src={CodeIcon} alt="" />
+                        <p className=" text-white/50 ">3 anos como</p>
+                        <h2 className=" text-2xl font-semibold text-white">Programador</h2>
+                    </div>
+                    <div className="  bg-[#14142A] flex flex-col items-center rounded-xl justify-center py-10 ">
+                        <img src={ProjectsIcon} alt="" />
+                        <p className=" text-white/50 ">7 anos como</p>
+                        <h2 className=" text-2xl font-semibold text-white">Trabalhos</h2>
+                    </div>
+                    <div className="  border border-Lblue/50 flex flex-col items-center rounded-xl justify-center py-10 ">
+                        <img src={DesignIcon} alt="" />
+                        <p className=" text-white/50 ">4 anos como</p>
+                        <h2 className=" text-2xl font-semibold text-white">Designer</h2>
+                    </div>
+
+                    <div className=" col-span-3  justify-center grid grid-cols-3 bg-[#14142A] p-3 rounded-xl text-Lblue/50 ">
+                        <div>
+                            <p className=" text-center">Desenvolvedor</p>
+                            <h2 className=" text-xl text-center font-semibold">Front-end</h2>
+                        </div>
+                        <div>
+                            <p className=" text-center">Dezenas de projetos e</p>
+                            <h2 className=" text-xl text-center font-semibold">Experiências</h2>
+                        </div>
+                        <div>
+                            <p className=" text-center">Designer Freelancer e</p>
+                            <h2 className=" text-xl text-center font-semibold">UI · UX</h2>
+                        </div>
+                    </div>
+                </section>
+                <section id="about" className=" Btablet:flex items-center Btablet:w-[80%] pt-[100px]  m-auto">
                     <div>
                         <HeaderText text="🧐 About Me" />
                         <p className=" text-white/50 my-10 ">Hello! My name is Canon. I work as a FrontEnd developer. I've worked on various projects over the previous three years, and I like developing as well. My first language is English, and my biggest ambition is to see things grow on the internet.</p>
@@ -67,23 +104,23 @@ const LandingPage = () => {
                 </section>
                 <Portfolio />
                 <Experience />
-                <section className=" py-10 Btablet:flex justify-center flex-col ">
+                <section id="contact" className=" py-10 Btablet:flex justify-center pt-[100px] flex-col Btablet:w-[80%] m-auto ">
                     <HeaderText text="📬 Contact Me " />
                     <h4 className=" text-xl Btablet:text-3xl  Btablet:pt-10 font-semibold text-white Btablet:text-center">Vamos conversar! </h4>
                     <div className=" my-10 Btablet:flex justify-center flex-col items-center">
                         <img className="mb-5" src={mess} alt="" />
                         <p className=" text-xl font-semibold text-Lblue">E-mail:</p>
                         <div className=" flex items-center my-5">
-                            <span className=" text-white/50">henriquesousa.dev@gmail.com</span>
+                            <span className=" text-white/50">samsoncanon2018@gmail.com</span>
                             <img className=" ml-5" src={Copysimple} alt="" />
                         </div>
 
                     </div>
                 </section>
-                <div className=" flex items-center my-5 Btablet:justify-center Btablet:pb-10">
+                <HashLink to="#home" smooth className=" flex items-center my-5 Btablet:justify-center Btablet:pb-10">
                     <span className=" text-Lblue/50">Voltar ao topo</span>
                     <img className=" ml-5" src={ArrowUp} alt="" />
-                </div>
+                </HashLink>
             </main>
 
             <footer className="  bg-[#14142A] p-5 flex flex-col justify-center ">

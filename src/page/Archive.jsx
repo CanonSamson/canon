@@ -1,5 +1,5 @@
 import github from "../asset/svg/github.svg"
-import HeaderText from "../components/HeaderText";
+import { FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 
@@ -45,9 +45,9 @@ const Archive = () => {
                                         <p>{archive.name}</p>
                                     </div>
                                     <div className=" flex ">
-                                        <Link className=" mr-2" to={archive.link}>
-                                            <img className=" w-5" src={github} alt="" />
-                                        </Link>
+                                        <a className=" mr-2" href={archive.link} >
+                                        <FiExternalLink size={20} />
+                                        </a>
                                         <Link to={archive.github}>
                                             <img className=" w-5" src={github} alt="" />
                                         </Link>

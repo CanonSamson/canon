@@ -3,12 +3,12 @@ import HeaderText from "../components/HeaderText";
 
 const Experience = () => {
     return (
-        <div id='experience' className=" text-white py-10">
+        <div id='experience' className=" text-white py-10 Btablet:w-[80%] m-auto pt-[100px]">
             <HeaderText text="💼 Experience" />
 
             <div >
 
-                <div className=' grid-cols-3 mt-10 hidden  m-auto max-w-[940px] tablet:grid'>
+                <div className=' grid-cols-3 mt-10 hidden    tablet:grid'>
                     <div className='  '>
                         <ul className=' '>
                             <li className='pl-5 py-3 text-Lblue border-Lblue border-l-2'>JavaScript (ES6+)</li>
