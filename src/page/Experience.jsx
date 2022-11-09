@@ -11,15 +11,16 @@ const Experience = () => {
                 <div className=' grid-cols-3 mt-10 hidden    tablet:grid'>
                     <div className='  '>
                         <ul className=' '>
-                            <li className='pl-5 py-3 text-Lblue border-Lblue border-l-2'>JavaScript (ES6+)</li>
-                            <li className='pl-5 py-3 border-l'>React</li>
-                            <li className='pl-5 py-3 border-l'>React Native</li>
-                            <li className='pl-5 py-3 border-l'>Tailwindcss</li>
+                            <li className='pl-5 py-3 text-Lblue border-Lblue border-l-2'>Eazi thenga</li>
+                            <li className='pl-5 py-3 border-l'>n-hub Nigeria</li>
+                            <li className='pl-5 py-3 border-l'>Hackathon</li>
+                            <li className='pl-5 py-3 border-l'>Welwings</li>
+                            <li className='pl-5 py-3 border-l'>n-hub Foundation!</li>
                         </ul>
                     </div>
                     <div className=' col-span-2'>
-                        <h4 className=' text-Lblue text-xl '>Engineer @ Upstatemant</h4>
-                        <p className='my-3 text-white/50'>My 2010 - present</p>
+                        <h4 className=' text-Lblue text-xl '>FrontEnd Developer</h4>
+                        <p className='my-3 text-white/50'> 2022 - 2022</p>
                         <p className='text-white my-3'>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</p>
                         <p className='text-white'>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p>
                     </div>
