@@ -24,19 +24,19 @@ const HomeRoute = () => {
                         </div>
                     </nav>
                     <div className={`${toggle ? "right-0" : "right-[-100%] tablet:right-0"}  Btablet:relative Btablet:float-none Btablet:flex-row Btablet:top-0 Btablet:text-center duration-150 transition-all z-50 fixed  right-0 flex flex-col justify-end float-right items-end top-20`}>
-                        <HashLink smooth to="" onClick={Toggler} className="my-5">
+                        <HashLink smooth to="/#home" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue  bg-[#14142A]  py-2 px-10 rounded-l-lg text-center">Home</span>
                         </HashLink>
-                        <HashLink smooth to="#about" onClick={Toggler} className="my-5">
+                        <HashLink smooth to="/#about" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]  Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">About Me </span>
                         </HashLink>
-                        <HashLink smooth to="#portfolio" onClick={Toggler} className="my-5">
+                        <HashLink smooth to="/#portfolio" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]   Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">Portfolio</span>
                         </HashLink>
-                        <HashLink smooth to="#experience" onClick={Toggler} className="my-5">
+                        <HashLink smooth to="/#experience" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]  Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">Experience</span>
                         </HashLink>
-                        <HashLink smooth to="#contact" onClick={Toggler} className="my-5">
+                        <HashLink smooth to="/#contact" onClick={Toggler} className="my-5">
                             <span className=" text-Lblue bg-[#14142A]  Btablet:text-white/50 py-2 px-10 rounded-l-lg text-center">Contact Me</span>
                         </HashLink>
                         <Link to="/archive" onClick={Toggler} className="my-5">

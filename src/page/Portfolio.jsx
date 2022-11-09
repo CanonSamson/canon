@@ -1,6 +1,7 @@
 import HeaderText from "../components/HeaderText";
 import DesignIcon from "../asset/svg/DesignIcon.svg"
-import portImg from "../asset/image/portImg.png"
+import findersmarket from "../asset/image/findersmarket.png"
+import hotelme from "../asset/image/hotelme.png"
 import video from "../asset/image/video.png"
 import ArrowRight from "../asset/svg/ArrowRight.svg"
 import icon from "../asset/svg/Vector.svg"
@@ -14,44 +15,29 @@ const Portfolio = () => {
     const projects = [
         {
             id: 1,
-            name: "Move.it",
-            image: portImg,
+            name: "Finders Market",
+            image: findersmarket,
             description: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
             lang1: "ReactJs",
             lang2: "Tailwind Css",
-            lang3: ""
+            lang3: "",
+            link:"",
+            github: "",
 
         },
         {
             id: 2,
-            name: "Move.it",
-            image: portImg,
+            name: "Hotelme",
+            image: hotelme,
             description: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
-            lang1: "ReactJs",
-            lang2: "Tailwind Css",
-            lang3: ""
+            lang1: "Html",
+            lang2: "CSS",
+            lang3: "",
+            link:"",
+            github: "",
 
         },
-        {
-            id: 2,
-            name: "Move.it",
-            image: portImg,
-            description: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
-            lang1: "ReactJs",
-            lang2: "Tailwind Css",
-            lang3: ""
 
-        },
-        {
-            id: 2,
-            name: "Move.it",
-            image: portImg,
-            description: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
-            lang1: "ReactJs",
-            lang2: "Tailwind Css",
-            lang3: ""
-
-        },
     ]
     return (
         <section id="portfolio" className=" my-10  Btablet:w-[80%] m-auto pt-[100px] ">
@@ -94,14 +80,14 @@ const Portfolio = () => {
                                 </div>
                             </div>
                             <div className=" flex items-center float-right my-2">
-                                <Link className=" shadow-xl mr-2 p-2 text-white/50" to="">
+                                <a  href={project.link} className=" shadow-xl mr-2 p-2 text-white/50">
                                     <FiExternalLink size={20} />
-                                </Link>
-                                <Link className=" shadow-xl p-2" to="">
+                                </a>
+                                <a  href={project.github} className=" shadow-xl p-2">
                                     <img className=" w-5" src={github} alt="" />
-                                </Link>
+                                </a>
                             </div>
-                            <img className=" w-full" src={portImg} alt="" />
+                            <img className=" w-full rounded" src={project.image} alt="" />
                         </div>
                     ))
                 }
