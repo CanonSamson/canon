@@ -31,14 +31,16 @@ const Experience = () => {
                     <div className='  text-Lblue/50 mt-10'>
                         <div className=' mb-[20px] overflow-x-auto w-full'>
                             <div className="w-[700px] h-[40px] items-center ">
-                                <span className='text-Lblue border-b-2 border-Lblue w-[100px] py-2 sm:mr-3   ml-3'>n-hub Nigeria</span>
+                                <span className='text-Lblue border-b-2 border-Lblue w-[100px] py-2 sm:mr-3   ml-3'>Eazi thenga</span>
                                 <span className='text-white border-b-2 w-[100px] py-2 sm:mr-3   ml-3'>Hackathon</span>
                                 <span className='text-white border-b-2 w-[100px] py-2 sm:mr-3   ml-3'>Freelencer</span>
                                 <span className='text-white border-b-2 w-[100px] py-2 sm:mr-3   ml-3'>Welwings</span>
-                                <span className='text-white border-b-2  w-[100px] py-2 sm:mr-3   ml-3'>n-hub Foundation!</span>
+                                <span className='text-white border-b-2  w-[100px] py-2 sm:mr-3   ml-3'>n-hub Nigeria!</span>
                             </div>
                         </div>
-                        <p className=' text-white'>I was an intern at n-hub Foundation, specializing in building (web applications and Native applications )!</p>
+                        <p className='text-white/50 my-3'>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</p>
+                        <p className='text-white/50'>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p>
+                        {/* <p className=' text-white'>I was an intern at n-hub Foundation, specializing in building (web applications and Native applications )!</p> */}
                     </div>
                 </div>
             </div>

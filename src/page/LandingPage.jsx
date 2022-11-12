@@ -23,13 +23,17 @@ import { HashLink } from "react-router-hash-link";
 
 const LandingPage = () => {
     return (
-        <div  className=" relative">
+        <div className=" relative">
             <div id="home" className=" absolute "></div>
             <main className=" mx-5 pt-[60px] ">
                 <header>
                     <div className=" flex justify-center my-10 Btablet:hidden items-center">
-                        <img src={github} alt="" />
-                        <img className=" mx-5" src={linkedin} alt="" />
+                        <a href="https://github.com/CanonSamson/">
+                            <img src={github} alt="" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/canon-samson-325736176/">
+                            <img className=" mx-5" src={linkedin} alt="" />
+                        </a>
                         <img src={behance} alt="" />
                     </div>
 
@@ -64,28 +68,28 @@ const LandingPage = () => {
                 <section className="hidden Btablet:grid grid-cols-3 gap-5 w-[80%] m-auto ">
                     <div className="  border border-Lblue/50 flex flex-col items-center rounded-xl justify-center py-10 ">
                         <img src={CodeIcon} alt="" />
-                        <p className=" text-white/50 ">3 anos como</p>
-                        <h2 className=" text-2xl font-semibold text-white">Programador</h2>
+                        <p className=" text-white/50 ">3 Years</p>
+                        <h2 className=" text-2xl font-semibold text-white">Programmer</h2>
                     </div>
                     <div className="  bg-[#14142A] flex flex-col items-center rounded-xl justify-center py-10 ">
                         <img src={ProjectsIcon} alt="" />
-                        <p className=" text-white/50 ">7 anos como</p>
-                        <h2 className=" text-2xl font-semibold text-white">Trabalhos</h2>
+                        <p className=" text-white/50 ">7 Years</p>
+                        <h2 className=" text-2xl font-semibold text-white">Digital Drawing</h2>
                     </div>
                     <div className="  border border-Lblue/50 flex flex-col items-center rounded-xl justify-center py-10 ">
                         <img src={DesignIcon} alt="" />
-                        <p className=" text-white/50 ">4 anos como</p>
+                        <p className=" text-white/50 ">4 Years</p>
                         <h2 className=" text-2xl font-semibold text-white">Designer</h2>
                     </div>
 
                     <div className=" col-span-3  justify-center grid grid-cols-3 bg-[#14142A] p-3 rounded-xl text-Lblue/50 ">
                         <div>
-                            <p className=" text-center">Desenvolvedor</p>
+                            <p className=" text-center">Developer</p>
                             <h2 className=" text-xl text-center font-semibold">Front-end</h2>
                         </div>
                         <div>
-                            <p className=" text-center">Dezenas de projetos e</p>
-                            <h2 className=" text-xl text-center font-semibold">Experiências</h2>
+                            <p className=" text-center">dozens of projects and</p>
+                            <h2 className=" text-xl text-center font-semibold">Experience</h2>
                         </div>
                         <div>
                             <p className=" text-center">Designer Freelancer e</p>
@@ -106,7 +110,7 @@ const LandingPage = () => {
                 <Experience />
                 <section id="contact" className=" py-10 Btablet:flex justify-center pt-[100px] flex-col Btablet:w-[80%] m-auto ">
                     <HeaderText text="📬 Contact Me " />
-                    <h4 className=" text-xl Btablet:text-3xl  Btablet:pt-10 font-semibold text-white Btablet:text-center">Vamos conversar! </h4>
+                    <h4 className=" text-xl Btablet:text-3xl  Btablet:pt-10 font-semibold text-white Btablet:text-center">Let's Talk! </h4>
                     <div className=" my-10 Btablet:flex justify-center flex-col items-center">
                         <img className="mb-5" src={mess} alt="" />
                         <p className=" text-xl font-semibold text-Lblue">E-mail:</p>
@@ -117,19 +121,22 @@ const LandingPage = () => {
 
                     </div>
                 </section>
-                <HashLink to="#home" smooth className=" flex items-center my-5 Btablet:justify-center Btablet:pb-10">
-                    <span className=" text-Lblue/50">Voltar ao topo</span>
-                    <img className=" ml-5" src={ArrowUp} alt="" />
+                <HashLink to="#home" smooth >
+                    <img className="my-10 p-5 rounded-full bg-Lblue/20  " src={ArrowUp} alt="" />
                 </HashLink>
             </main>
 
-            <footer className="  bg-[#14142A] p-5 flex flex-col justify-center ">
+            <footer className=" bg-[#14142A] p-5 flex flex-col justify-center ">
                 <div className=" flex justify-center my-10 items-center">
-                    <img src={github} alt="" />
-                    <img className=" mx-5" src={linkedin} alt="" />
+                    <a href="https://github.com/CanonSamson/">
+                        <img src={github} alt="" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/canon-samson-325736176/">
+                        <img className=" mx-5" src={linkedin} alt="" />
+                    </a>
                     <img src={behance} alt="" />
                 </div>
-                <span className=" text-white/50 text-center">Copyright © Henrique Sousa · 2022</span>
+                <span className=" text-white/50 text-center">Copyright © samson canon · 2022</span>
             </footer>
         </div>
     );

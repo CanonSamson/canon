@@ -47,7 +47,7 @@ const HomeRoute = () => {
                 <div onClick={Toggler} className={`${toggle ? "w-full h-screen Btablet:w-0 Btablet:h-0" : "w-0 h-0"} duration-150 fixed bg-Bblue/20 w-full h-screen z-40`}></div>
             </div>
 
-            <div className={`${toggle ? "right-[100%] Btablet:right-0 absolute overflow-hidden " : "right-0 relative"} duration-200 transition-all`}  >
+            <div >
                 <Outlet />
             </div>
         </div>
