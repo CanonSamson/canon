@@ -17,12 +17,15 @@ const Skills = () => {
                     <Li text="Css" />
                     <Li text="Styled Components" />
                     <Li text="TailwindCss" />
+                    <Li text="Material UI" />
                 </ul>
                 <ul>
                     <Li text="JavaScript" />
                     <Li text="ReactJs" />
                     <Li text="React Native" />
                     <Li text="EcommenceJs" />
+                    <Li text="NodeJs" />
+
                 </ul>
             </div>
 

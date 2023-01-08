@@ -44,8 +44,13 @@ const LandingPage = () => {
                                 <h1 className=" text-4xl font-bold text-white Btablet:text-2xl">Samson canon <span className=" text-white/50">I build things for the web.</span></h1>
                                 <p className=" text-white/75 my-5">Front-end developer · UI designer</p>
                                 <div className=" hidden Btablet:flex ">
-                                    <img src={github} alt="" />
-                                    <img className=" mx-5" src={linkedin} alt="" />
+                                    <a href="https://github.com/CanonSamson/">
+                                        <img src={github} alt="" />
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/in/canon-samson-325736176/">
+                                        <img className=" mx-5" src={linkedin} alt="" />
+                                    </a>
                                     <img src={behance} alt="" />
                                 </div>
                             </div>
@@ -68,17 +73,17 @@ const LandingPage = () => {
                 <section className="hidden Btablet:grid grid-cols-3 gap-5 w-[80%] m-auto ">
                     <div className="  border border-Lblue/50 flex flex-col items-center rounded-xl justify-center py-10 ">
                         <img src={CodeIcon} alt="" />
-                        <p className=" text-white/50 ">3 Years</p>
+                        <p className=" text-white/50 ">2  Years</p>
                         <h2 className=" text-2xl font-semibold text-white">Programmer</h2>
                     </div>
                     <div className="  bg-[#14142A] flex flex-col items-center rounded-xl justify-center py-10 ">
                         <img src={ProjectsIcon} alt="" />
-                        <p className=" text-white/50 ">7 Years</p>
+                        <p className=" text-white/50 ">5 Years</p>
                         <h2 className=" text-2xl font-semibold text-white">Digital Drawing</h2>
                     </div>
                     <div className="  border border-Lblue/50 flex flex-col items-center rounded-xl justify-center py-10 ">
                         <img src={DesignIcon} alt="" />
-                        <p className=" text-white/50 ">4 Years</p>
+                        <p className=" text-white/50 ">3 Years</p>
                         <h2 className=" text-2xl font-semibold text-white">Designer</h2>
                     </div>
 
@@ -100,7 +105,7 @@ const LandingPage = () => {
                 <section id="about" className=" Btablet:flex items-center Btablet:w-[80%] pt-[100px]  m-auto">
                     <div>
                         <HeaderText text="🧐 About Me" />
-                        <p className=" text-white/50 my-10 ">Hello! My name is Canon. I work as a FrontEnd developer. I've worked on various projects over the previous three years, and I like developing as well. My first language is English, and my biggest ambition is to see things grow on the internet.</p>
+                        <p className=" text-white/50 my-10 ">Hello! My name is Canon. I work as a FrontEnd developer. I've worked on various projects over the previous 2 years, and I like developing as well. My first language is English, and my biggest ambition is to see things grow on the internet.</p>
                         <p className=" text-white/50 my-10 ">When starting a new project, I prefer to talk with my customers to have a better grasp of their needs and project vision. Thank you in advance for your time and consideration. I hope to work with you soon.</p>
                         <p className=" text-white/50 my-10 ">Here is a list of the technologies that I'm familiar with!</p>
                         <Skills />
@@ -111,11 +116,24 @@ const LandingPage = () => {
                 <section id="contact" className=" py-10 Btablet:flex justify-center pt-[100px] flex-col Btablet:w-[80%] m-auto ">
                     <HeaderText text="📬 Contact Me " />
                     <h4 className=" text-xl Btablet:text-3xl  Btablet:pt-10 font-semibold text-white Btablet:text-center">Let's Talk! </h4>
+
+
+                    <div className=" py-20">
+                        <form action="" className=" flex flex-col w-full">
+                            <input className=" text-white focus:outline-none p-5 my-5 bg-[#14142A] rounded  shadow-lg" type="text" placeholder="Your Name/Company" />
+                            <input className=" text-white focus:outline-none p-5 my-5 bg-[#14142A] rounded shadow-lg" type="email" placeholder="Your Email" />
+                            <textarea className=" text-white p-5 my-5 focus:outline-none bg-[#14142A] h-[170px] rounded  shadow-lg" name="" placeholder="Your Message" id="" />
+                        </form>
+                     <button className=" bg-Lblue  p-2 px-10 animate-bounce ">Submit</button>
+                    </div>
+
                     <div className=" my-10 Btablet:flex justify-center flex-col items-center">
                         <img className="mb-5" src={mess} alt="" />
                         <p className=" text-xl font-semibold text-Lblue">E-mail:</p>
                         <div className=" flex items-center my-5">
-                            <span className=" text-white/50">samsoncanon2018@gmail.com</span>
+                            <a href="samsoncanon2018@gmail.com">
+                                <span className=" text-white/50">samsoncanon2018@gmail.com</span>
+                            </a>
                             <img className=" ml-5" src={Copysimple} alt="" />
                         </div>
 

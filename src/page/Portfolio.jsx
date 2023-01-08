@@ -12,16 +12,19 @@ import ArrowRight from "../asset/svg/ArrowRight.svg"
 //project images
 import findersmarket from "../asset/image/findersmarket.png"
 import hotelme from "../asset/image/hotelme.png"
+import manage from "../asset/image/manage.jpg"
 import blogr from "../asset/image/desktop-preview.jpg"
 import book from "../asset/image/bookmark.jpg"
 import news from "../asset/image/newshome.jpg"
 import iidea from "../asset/image/iidea.png"
 import eazithenga from "../asset/image/eazithenga.png"
+import art from "../asset/image/prot.png"
 
 
 const Portfolio = () => {
 
     const projects = [
+
         {
             id: 1,
             name: "Eazi Thenga",
@@ -35,6 +38,31 @@ const Portfolio = () => {
 
         },
         {
+            id: 66,
+            name: "Art Portfolio Creator",
+            image: art,
+            description: "",
+            lang1: "ReactJs",
+            lang2: "Tailwind Css",
+            lang3: "Firebase",
+            link: "",
+            github: "https://github.com/CanonSamson/art-portfolio",
+
+        },
+        {
+            id: 3,
+            name: "Hoteldime",
+            image: hotelme,
+            description: "",
+            lang1: "Html",
+            lang2: "CSS",
+            lang3: "JavaScript",
+            link: "https://hoteldime.com/",
+            github: "",
+
+        },
+
+        {
             id: 2,
             name: "Finders Market",
             image: findersmarket,
@@ -46,18 +74,7 @@ const Portfolio = () => {
             github: "https://github.com/CanonSamson/finders-market-frontend",
 
         },
-        {
-            id: 3,
-            name: "Hotelme",
-            image: hotelme,
-            description: "",
-            lang1: "Html",
-            lang2: "CSS",
-            lang3: "JavaScript",
-            link: "",
-            github: "",
 
-        },
         {
             id: 4,
             name: "Iidea.86",
@@ -68,6 +85,18 @@ const Portfolio = () => {
             lang3: "Firebase",
             link: "https://iidea86.vercel.app/",
             github: "https://github.com/CanonSamson/Iidea86",
+
+        },
+        {
+            id: 5,
+            name: "Manage Landing Page",
+            image: manage,
+            description: "",
+            lang1: "ReactJs",
+            lang2: "Tailwind Css",
+            lang3: "",
+            link: "",
+            github: "https://github.com/CanonSamson/manage-landing-page",
 
         },
 
@@ -87,18 +116,6 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            name: "Bokmark Landing Page",
-            image: book,
-            description: "",
-            lang1: "Html",
-            lang2: "CSS",
-            lang3: "JavaScript",
-            link: "",
-            github: "https://github.com/CanonSamson/blogr",
-
-        },
-        {
-            id: 3,
             name: "News Homepage Main",
             image: news,
             description: "",
@@ -109,6 +126,19 @@ const Portfolio = () => {
             github: "https://github.com/CanonSamson/news-homepage",
 
         },
+        {
+            id: 3,
+            name: "Bokmark Landing Page",
+            image: book,
+            description: "",
+            lang1: "Html",
+            lang2: "CSS",
+            lang3: "JavaScript",
+            link: "",
+            github: "https://github.com/CanonSamson/blogr",
+
+        },
+
     ]
 
     return (
@@ -146,9 +176,12 @@ const Portfolio = () => {
                                 <div className="mr-2">
                                     <span className=" text-Lblue bg-[#14142A] py-2 text-[10px]  px-2 rounded-lg text-center">{project.lang2}</span>
                                 </div>
-                                <div className="mr-2">
-                                    <span className=" text-Lblue bg-[#14142A] py-2 text-[10px]  px-2 rounded-lg text-center">{project.lang3}</span>
-                                </div>
+                                {
+                                    !project.lang3 ? "" :
+                                        <div className="mr-2">
+                                            <span className=" text-Lblue bg-[#14142A] py-2 text-[10px]  px-2 rounded-lg text-center">{project.lang3}</span>
+                                        </div>
+                                }
                             </div>
                             <div className=" flex items-center float-right my-2">
                                 <a href={project.link} className=" shadow-xl mr-2 p-2 text-white/50">
@@ -158,7 +191,7 @@ const Portfolio = () => {
                                     <img className=" w-5" src={github} alt="" />
                                 </a>
                             </div>
-                            <img className=" w-full rounded" src={project.image} alt="" />
+                            <img className=" w-full rounded h-[150px] object-cover" src={project.image} alt="" />
                         </div>
                     ))
                 }

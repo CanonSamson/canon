@@ -12,10 +12,9 @@ const Experience = () => {
                     <div className='  '>
                         <ul className=' '>
                             <li className='pl-5 py-3 text-Lblue border-Lblue border-l-2'>Eazi thenga</li>
+                            <li className='pl-5 py-3 border-l'>FSI</li>
+                            <li className='pl-5 py-3 border-l'>Upwork</li>
                             <li className='pl-5 py-3 border-l'>n-hub Nigeria</li>
-                            <li className='pl-5 py-3 border-l'>Hackathon</li>
-                            <li className='pl-5 py-3 border-l'>Welwings</li>
-                            <li className='pl-5 py-3 border-l'>n-hub Foundation!</li>
                         </ul>
                     </div>
                     <div className=' col-span-2'>
@@ -32,9 +31,8 @@ const Experience = () => {
                         <div className=' mb-[20px] overflow-x-auto w-full'>
                             <div className="w-[700px] h-[40px] items-center ">
                                 <span className='text-Lblue border-b-2 border-Lblue w-[100px] py-2 sm:mr-3   ml-3'>Eazi thenga</span>
-                                <span className='text-white border-b-2 w-[100px] py-2 sm:mr-3   ml-3'>Hackathon</span>
-                                <span className='text-white border-b-2 w-[100px] py-2 sm:mr-3   ml-3'>Freelencer</span>
-                                <span className='text-white border-b-2 w-[100px] py-2 sm:mr-3   ml-3'>Welwings</span>
+                                <span className='text-white border-b-2 w-[100px] py-2 sm:mr-3   ml-3'>FSI</span>
+                                <span className='text-white border-b-2 w-[100px] py-2 sm:mr-3   ml-3'>Upwork</span>
                                 <span className='text-white border-b-2  w-[100px] py-2 sm:mr-3   ml-3'>n-hub Nigeria!</span>
                             </div>
                         </div>
